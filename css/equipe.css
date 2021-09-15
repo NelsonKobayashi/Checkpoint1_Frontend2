@@ -1,0 +1,41 @@
+/* estilizando a classe cards dentro da Div */
+.cards {
+    display: grid; /* tornando o display Grid */
+    grid-template-columns: repeat(3, 300px);/* configurando o número de colunas e espaçamento */
+    justify-content: center; /* alinhando as colunas ao centro */
+    gap: 2rem;/* espaçamento de 2rem externo */
+    padding: 2rem; /* espaçamento interno */
+}
+/* estilizando a classe divfofoca */
+.divfofoca {
+    background-color: #232f3e; /* alterando a todo fundo  */
+    border-radius: 1rem; /* arredondando cantos */
+    color: #fff; /* alterando a cor da fonte */
+}
+/* estilizando a imagem */
+.divfofoca > img {
+    width: 100%; /* ocupando Todo o espaço disponível */
+    height: 240px; /* definindo altura em 240 pixels */
+    object-fit: cover; /* redimensionando para caber no espaço */
+    border-radius: 1rem 1rem 0 0; /* arredondando cantos */
+}
+/* estilizando tag h4 */
+.divfofoca h4 {
+    text-transform: uppercase; /* transformando texto em caixa alta */
+    font-size: 1rem; /* tamanho da fonte */
+    padding: 0.5rem; /* espaçamento interno */
+    margin: 1rem; /* orçamento externo */
+    border-bottom: 2px solid #ffa500; /* borda inferior com 2 pixels sólido */
+}
+/* estilizando a div */
+.divfofoca div {
+    justify-content: space-evenly; /* dando espaçamento igual aos itens */
+    display: flex; /* tornando o elemento inline */
+    padding: 0.5rem; /* espaçamento interno */ 
+}
+/* pesquisando a imagem dentro da tag a */
+.divfofoca a img{
+    width: 50px; /* definindo largura em 50 pixels */
+    height: 50px; /* definindo altura em 50 pixels */
+    border-radius: 0.5rem; /* arredondando cantos */
+}

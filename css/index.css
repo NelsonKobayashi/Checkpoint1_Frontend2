@@ -1,0 +1,171 @@
+/* zerando as configurações padrões do browser */
+* {
+    margin: 0; /* definindo margem em 0 */
+    padding: 0; /* definindo espaçamento interno em 0 */
+    box-sizing: border-box; /* prenchimento incluso na largura e altura */  
+    list-style: none; /* estilo de lista desativado */
+    outline: none; /* retirando preenchimento externo ao elemento */
+    border: none; /* retirando a borda do elemento */
+}
+/* setando a cor de fundo do body */
+body {
+    background-color: #eaeded;
+}
+
+main {
+    display: flex; /* tornando a main inline */
+    flex-direction: column; /* alterando a direção referência para coluna */
+}
+/* estilizando a classe modal */
+.modal {
+    position: fixed; /* fixando posição */
+    display: none; /* retirando visualização inicial */
+    top: 0; /* alinhando na parte superior */
+    left: 0; /* alinhando para esquerda */
+    height: 100vh; /* utilizando 100% da altura da tela do usuário */
+    width: 100vw; /* utilizando 100% da largura da tela do usuário  */
+    background-color: rgba(0, 0, 0, 0.6); /* alternado cor do fundo */
+    z-index: 2; /* posicionando item */
+}
+/* estilizando a classe formFofoca */
+.formFofoca {
+    display: none; /* retirando visualização inicial */
+    color: #000; /* alterando cor do texto */
+    position: fixed; /* fixando posição */
+    left: 50%; /* alinhando no eixo horizontal partir do centro */
+    top: 40%; /* alinhando no eixo vertical a partir de 40% a partir de cima */
+    transform: translate(-50%, -50%); /* retorna o item em 50% para a esquerda e para  cima para tentar alinha exatamente ao centro */
+    background-color: #f3f3f3; /* alternado cor de fundo */
+    border: 2px solid #131921; /* alterando cor da borda */
+    border-radius: 0.5rem; /* arredondando as pontas */
+    width: 500px; /* fixando a largura em 500px */
+    height: auto; /*　setando altura de forma automática */
+    padding: 20px; /* espaçamento interno */
+    margin: 3rem auto 3rem auto; /* inserindo margem */
+    z-index: 3; /* posicionando o item na terceira posição */
+}
+/* estilizando botão com id btnFechar */
+#btnFechar {
+    position: absolute; /* setando posição como absoluto */
+    right: 1rem; /* alinhando item à direita */
+    top: 1rem; /* alinhando item à parte superior */
+    background-color: transparent; /* alterando fundo com cor transparente */
+    cursor: pointer; /* cursor do mouse altera para mãozinha quando passa por cima */
+    padding: 5px 10px; /* espaçamento interno */
+}
+/* estilizando item dentro da tag com id #btnFechar e classe .fa-times */
+#btnFechar .fa-times {
+    font-size: 20px; /* alternado tamanho da fonte */
+    color: #000; /* alterando com da fonte */
+}
+/* estilizando a tag h2 */
+.formFofoca h2 {
+    font-size: 2rem; /* alternado tamanho da fonte */
+    text-align: center; /* alinhando ao centro */
+    margin-bottom: 1rem; /* inserindo margem na parte inferior */
+}
+/* estilizando tag p */
+.formFofoca p {
+    font-size: 20px; /* alternado tamanho da fonte */
+    color: #f00; /* alternado cor do texto */
+    margin-bottom: 1rem; /* inserindo margem na parte inferior */
+}
+/* estilizando a div */
+.formFofoca div {
+    margin-bottom: 1rem; /* inserindo margem inferior */
+    display: flex; /* tornando o elemento inline */
+    flex-wrap: wrap; /* inserindo quebra de linha se necessário */
+}
+/* estilizando a tag label */
+.formFofoca label {
+    margin-bottom: 0.2rem; /* inserindo margem na parte inferior */
+    font-size: 20px; /* tamanho da fonte */
+    cursor: pointer; /* alterando o cursor do mouse para mãozinha quando passado por cima do label */
+}
+/* estilizando o input e textarea */
+.formFofoca input,
+.formFofoca textarea {
+    width: 100%; /* ocupa toda área disponível */
+    border: 2px solid #000; /* inserindo borda de 2px com cor preta */
+    border-radius: 0.5rem; /* arredondando cantos */
+    padding: 0.5rem; /* espaçamento interno */
+    transition: border .3s; /* transição em .3s */
+    resize: none; /* bloqueado o tamanho */
+}
+/* estilizando o counter */
+.counter {
+    margin-left: auto; /* inserindo margem à esquerda automaticamente  */
+    margin-right: 0.3rem; /* inserindo margem à direitade 0.3rem */
+    font-size: 1.2rem; /* tamanho da fonte */
+}
+/* estilizando o hover e o focus do input e textarea */
+.formFofoca input:hover,
+.formFofoca input:focus,
+.formFofoca textarea:hover,
+.formFofoca textarea:focus {
+    border: 2px solid #ffa500; /* inserindo borda de 2px */
+}
+/* estilizando o item com o id #addCard */
+#addCard {
+    font-weight: 600; /* alterndo o peso da fonte */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* inserindo espaçamento interno*/
+    background-color: #ffa500; /* alterando cor de fundo */
+    outline: none;  /* sem preenchimento externo */
+    margin-left: 50%; /* alinhando card a partir do centro */
+    transform: translateX(-50%); /* retornando 50% para alinhar exatamente ao centro  */
+    cursor: pointer; /* alterando o cursor do mouse para mãozinha quando passado por cima do card */
+    border: 2px solid transparent; /* inserindo borda */
+    border-radius: 0.5rem; /* arredondando cantos */
+    transition: border .3s; /* transiçao da borda em .3s */
+}
+
+#addCard:hover {
+    border: 2px solid #131921; /* inserindo borda no hover */
+}
+/* alternado itens com a classe .cards */
+.cards {
+    display: grid; /* tornando o elemento inline */
+    grid-template-columns: repeat(4, 300px); /* organizando cards em grid, com 4 colunas iguais */
+    justify-content: center; /* alinhando os cards ao centro */
+    gap: 1rem; /* espaçamento de 1rem entre os cards */
+    padding: 2rem; /* espaçamento interno */
+}
+/* estilizando item com classe .divfofoca */
+.divfofoca {
+    position: relative; /* setando posição como relativo */
+    background-color: #0d2441; /* alternado a cor de fundo */
+    border-radius: 1rem; /* arredondando os cantos */
+    color: #fff; /* alternado a cor da fonte */
+}
+/* alternado imagem dentro da classe .divfofoca  */
+.divfofoca img {
+    width: 100%; /* ocupando todo espaço disponível */
+    height: auto; /* dando altura automática para imagem */
+    object-fit: cover; /* ajustando a imagem ao espaço disponível */
+    border-radius: 1rem 1rem 0 0; /* arredondando cantos */
+}
+/* estilizando a tag h2 */
+.divfofoca h2 {
+    text-transform: uppercase; /* transfrmando tudo para caixa alta */
+    font-size: 1rem; /* alternado tamanho da fonte */
+    padding: 0.5rem 0; /* inserindo espaçamento interno*/
+    margin:  0 1rem; /* adicionando margem */
+    border-bottom: 2px solid #ffa500; /* adicionando margem */
+}
+/* estilizandp a tag p */
+.divfofoca p {
+    font-size: .9rem; /* alterando tamanho da fonte */
+    margin: 1rem; /* inserindo margem */
+}
+/* estilizando o botão */
+.divfofoca button {
+    position: absolute; /* setendo posição para absoluto */
+    background-color: #ffa500; /* alternado cor do fundo */
+    font-size: 1rem; /* alternado tamamnho da imagem */
+    padding: 0.1rem 0.3rem; /* inserindo espaçamento interno*/
+    border-radius: 1rem; /* arredondando cantos*/
+    left: 50%; /* alinhamento horizontal a partir do centro */
+    bottom: -0.5rem; /* alinhamento inferior */
+    transform: translateX(-50%); /* ajustando alinhamento para que o botão ocupe exatamente o centro  */
+    cursor: pointer; /* alterando o cursor do mouse para mãozinha quando passado por cima do botão */
+}

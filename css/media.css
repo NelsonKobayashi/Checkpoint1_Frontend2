@@ -1,0 +1,93 @@
+/* Responsividade para telas com largura máxima de 1024px*/
+@media (max-width: 1440px) {
+    
+    main .cards {
+        grid-template-columns: repeat(3, 300px); /* alterando o número de colunas para 3 com tamanho de 300 pixels de largura */
+    }
+    
+    .formFofoca {
+        width: 400px; /* definindo largura em 400 pixels */
+        height: auto; /* seta a altura para automaticamente */
+    }
+
+    .contato {
+        width: 400px; /* definindo largura em 400 pixels */
+        height: auto; /* seta a altura para automaticamente */
+    }
+}
+
+/* Responsividade para telas com largura máxima de 1024px*/
+@media (max-width: 1024px) {
+    
+    main .cards {
+        grid-template-columns: repeat(3, 3fr); /* transforma o grid em três colunas */
+    }
+    
+    .formFofoca {
+        width: 400px; /* definindo largura em 400 pixels */
+        height: auto; /* seta a altura para automaticamente */
+    }
+
+    .contato {
+        width: 400px; /* definindo largura em 400 pixels */
+        height: auto; /* seta a altura para automaticamente */
+    }
+}
+
+/* Responsividade para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    main .cards {
+        grid-template-columns: repeat(2, 2fr); /* transforma o grid em duas colunas */
+    }
+    
+    .formFofoca {
+        width: 300px; /* definindo largura em 300 pixels */
+        height: auto; /* definindo altura automaticamente */
+    }
+    
+    .contato {
+        width: 300px; /* definindo largura em 300 pixels */
+        height: auto; /* definindo altura automaticamente */
+    }
+}
+
+/* Responsividade para telas com largura máxima de 425px*/
+@media (max-width: 375px) {
+    main .cards {
+        grid-template-columns: 1fr; /* transforma o grid em apenas uma coluna */
+    }
+
+    .formFofoca {
+        width: 200px; /* definindo largura em 200 pixels */
+        height: auto; /* definindo altura automaticamente */
+    }
+
+    .contato {
+        width: 200px;  /* definindo largura em 200 pixels */
+        height: auto; /* definindo altura automaticamente */
+    }
+}
+
+.imagem {
+    display: none; /* retira a exibição da imagem */
+    
+}
+ /* Responsividade para telas com largura máxima de 320px*/
+@media (max-width:320px) {
+    main *, footer *, header *, section *{
+        display:none; /* retira a visualiação de todos os itens do body */
+    }
+    
+    .imagem img {
+        width: 75px; /* limita o tamanho da imagem em 75px */
+    }
+    /* estilização da classe imagem */
+    .imagem {
+       display: flex; /* transforma em inline */
+        position: fixed; /* fixa a posição */
+        left: 0; /* alinha a esquerda */
+        top: 50%; /* alinha ao centro */
+        width: 100%; /* ocupa 100% do espaço disponível */
+        justify-content: space-between; /* afasta os itens para os extremos */
+    }
+}   

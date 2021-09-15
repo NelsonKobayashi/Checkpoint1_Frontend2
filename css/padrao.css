@@ -1,0 +1,129 @@
+/* zerando as configurações padrões do browser */
+* {
+    margin: 0; /* definindo margem em 0 */
+    padding: 0; /* definindo espaçamento interno em 0 */
+    box-sizing: border-box; /* prenchimento incluso na largura e altura */  
+    list-style: none; /* estilo de lista desativado */
+    outline: none; /* retirando preenchimento externo ao elemento */
+    border: none; /* retirando a borda do elemento */
+}
+
+/* HEADER */
+/* estilizando elementos do header */
+header {
+    position: fixed; /* fixando os componentes da header */
+    width: 100%; /* ocupando 100% da largura da header */
+    z-index: 1; /* seta a ordem da pilha do elemento */
+    background-color: #0d2441; /* setando a cor da header */
+    padding: 1rem; /* espaçamento interno de 1rem */
+}
+/* estilizando o menu nav - setagem geral */
+nav {
+    display: flex; /* tornando o elemento nav em inline */
+    justify-content: space-between; /* espaçando os elementos igualmente entre eles */
+    align-items: center; /* centralizando os itens */
+}
+/* estilizando a iamgem do nav */
+nav img {
+    width: 60px; /* definindo a largura máxima do elemento em 60px */
+    height: auto; /* definido altura automaticamente */
+    border-radius: 0.5rem; /* arredondando as pontas da imagem  */
+}
+/* tornando div dentro de nav em elemento inline */
+nav div {
+    display: flex;
+}
+/* estilizando botrão da nav */
+nav button {
+    font-weight: 600; /* alternado peso da fonte */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* espaçamento interno de 0.5rem para parte superior e inferior e definindo 1.5rem para a direita e esquerda */
+    background-color: #ffa500; /* alterando a cor do botão */
+    outline: none; /* retirando preenchimento externo ao elemento */
+    cursor: pointer; /* cursor do mouse se torna mãozinha quando passa por cima */
+    border: 2px solid transparent; /* definindo borda de 2px com transparência */
+    border-radius: 0.5rem; /* arredondando as pontas da imagem  */
+    transition: border .3s; /* transição (animação) do botão em .3s */
+}
+/* trabalhando animação do botão dentro da nav */
+nav button:hover {
+    border: 2px solid #fff; /* borda solida, branca com 2px de largura */
+}
+/* estilizando a tag ul */
+nav ul {
+    display: flex; /* tornando o elemento inline */
+    align-items: center; /* alinhando os itens ao centro */
+}
+
+nav li {
+    margin-left: 1rem; /* inserindo margem de 1 rem à esquerda na lista da nav*/
+}
+/* estilizando tag a na lista */
+nav li a {
+    text-decoration: none; /* tirando decoração do texto */
+    border: 1px solid transparent;/* inserindo borda de um pixel transparente */
+    border-radius: 0.5rem; /* arredondando borda da tag a dentro da lista */
+    transition: border; /* inserindo transição na borda */
+}
+/* inserindo estilização no focus e no hover */
+nav li a:focus,
+nav li a:hover {
+    border: 1px solid #fff; /* inserindo borda de um pixel cor branca */
+}
+/* estilizando tag a na lista */
+nav li a {
+    font-size: 1.2rem; /* tamanho da fonte 1.2rem */
+    font-weight: 400; /* alterando o peso da fonte */
+    color: #fff; /* alterando a cor do texto para branco */
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;/* dando espaçamento de 0.2rem para a parte superior e inferior e 0.8 rem para o lado esquerdo lado direito */
+}
+
+/* /HEADER */
+
+
+
+/* MAIN */
+/* estilizando o corpo principal */
+main {
+    padding: 90px 0 18px 0; /* alterando espaçamento interno */
+    min-height: 90vh; /* definir o espaçamento mínimo, de acordo com a tela*/
+}
+/* /MAIN */
+
+/* FIXED BUTTON */
+/* estilizando a section */
+section {
+    position: absolute; /* tornando o posicionamento absoluto */
+    width: 100%; /* utilizando 100% da largura */
+    height: 1rem; /* utilizando medida de 1rem para altura */
+}
+/* estilizando imagem do elemento de nome classe fixedButton */
+#fixedButton img{
+    position: absolute; /* tornando o posicionamento absoluto */
+    right: 3rem; /* posicionando 3rem à direita */
+    bottom: 1rem; /* posicionando 1rem para baixo */
+    width: 4.5rem; /* utilizando largura de 4.5rem */
+}
+
+/* /FIXED BUTTON */
+
+/* FOOTER */
+/* estilizando footer */
+footer {
+    position: relative;  /* tornando posicionamento relativo */
+    width: 100%; /* utilizando o espaço total da largura */
+    background-color: #0d2441;  /* inserindo cor ao fundo */
+    padding: 2.4rem; /* inserindo espaçamento interno */
+    text-align: center; /* alinhando texto ao centro */
+    bottom: 0; /* zerando espaçamento inferior */
+}
+/* alterando a cor da fonte */
+footer p {
+    color: #fff; /* alterando cor da letra para branco */
+}
+/* retirando mudança de cor do link */
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* /FOOTER */

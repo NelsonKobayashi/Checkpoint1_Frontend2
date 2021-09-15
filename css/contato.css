@@ -1,0 +1,75 @@
+/* estilização da página contato.html */
+
+/* estilização padrão da DIV/formulário */
+.contato {
+    color: #000; /* cor do texto */
+    position: fixed; /* fixando posição */
+    left: 50%;  /* direcionando posição 50% à esquerda  */
+    top: 45%; /* direcionando posição 45% para cima */
+    transform: translate(-45%, -50%); /* ajustando posição para ocupar exatamente o meio */
+    background-color: #f3f3f3; /* selecionando cor de fundo do forms */
+    border: 2px solid #131921; /* criando uma borda de 2px com a cor preta */
+    border-radius: 0.5rem; /* produz um leve arredondamento nas pontas da nossa caixa de forms*/ 
+    width: 500px; /* Largura máxima da caixa de forms definido em 500px */
+    height: auto; /* Altura setada automaticamente*/
+    padding: 20px; /* Espaçamento interno da caixa de 20px */
+    margin: 3rem auto 3rem auto; /* Margem setada na direita e esquerda em auto e na parte superior igual à parte inferior */
+}
+/* estilização da tag h2 */
+.contato h2 {
+    font-size: 2rem; /* tamanho da fonte */
+    text-align: center; /* alinhando o texto ao centro */
+    margin-bottom: 1rem; /* margem inferior de 1rem */
+}
+/*  estilizando a tag p  */
+.contato p {
+    font-size: 20px; /* tamanho da fonte de 20px */
+    color: #f00; /* cor da fonte */ 
+    margin-bottom: 1rem; /* margem inferior de 1rem */
+}
+/* estilizando a div da classe contato */
+.contato div {
+    margin-bottom: 1rem; /* margem inferior de 1rem */
+    display: flex; /* tornado os elementos dentro da div inline */
+    flex-wrap: wrap; /* torna a quebra de linha possível, respeitando o tamanho original dos elementos */
+}
+/*  estilizando os labels do form */
+.contato label {
+    margin-bottom: 0.2rem; /* margem inferior de 0.2rem */
+    font-size: 20px; /* tamanho da fonte de 20px */
+    cursor: pointer; /* transforma o ponteiro do mouse em mão de mickey mouse */
+}
+/* estilizando os campos de input e textarea */
+.contato input,
+.contato textarea {
+    width: 100%; /* ocupando a área do form em 100% */
+    border: 2px solid #000; /* definindo borda de cor preta com 2px de largura */
+    border-radius: 0.5rem; /* arredondando as caixinhas do input e text-area */
+    padding: 0.5rem; /* espaçamento interno de 0.5rem */
+    transition: border .3s; /* transição da borda em .3s */
+    resize: none; /* redimensionamento desligado */
+}
+/* estilizando o hover e focus dos campos de input e textarea */
+.contato input:hover,
+.contato input:focus,
+.contato textarea:hover,
+.contato textarea:focus {
+    border: 2px solid #ffa500; /* definindo borda de 2px, sólido e com essa cor (#ffa500) no focus e hover das tag inputs e textarea */
+}
+/* estlizando o botão de contato */
+.btn-contato {
+    font-weight: 600; /* ajustando peso da fonte */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* Espaçamento de 0.5rem para parte superior e inferior e de 1.5rem para a esquerda e direita. */
+    background-color: #ffa500; /* cor de fundo #ffa500 */
+    outline: none; /* sem preenchimento externo */
+    margin-left: 50%; /* colocando o botão para iniciar a partir da metade do espaço disponível */
+    transform: translateX(-50%); /* retornando metade do botão para ajusta-lo exatamente no meio da caixa */
+    cursor: pointer; /* transforma o ponteiro do mouse em mão de mickey mouse */
+    border: 2px solid transparent; /* definindo borda de 2px com transparência */
+    border-radius: 0.5rem; /* produz um leve arredondamento nas pontas do botão */ 
+    transition: border .3s; /* transição da borda em .3s */
+}
+/* estilizando o hover do botão */
+.btn-contato:hover {
+    border: 2px solid #131921; /* altera a borda do botão em 2px na cor preta */
+}
